@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) {
+    .container__consultas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        .container__perfil {
+            grid-column: 1/3;
+        }
+
+        .titulo__agenda {
+            grid-column: 1/3;
+        }
+
+        .container__pacientes {
+            display: grid;
+            grid-column: 1/3;
+            gap: 1rem;
+
+        }
+    }
+
+    .container__formulario {
+
+        .titulo__formulario {
+            font-size: $tamanho-principal + 0.5;
+        }
+
+        .form__itens {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        .background {
+            display: none;
+        }
+
+        .container__consultas {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column: 2/3;
+            row-gap: 1.2rem;
+
+            .container__perfil {
+                grid-column: 1/3;
+            }
+
+            .titulo__agenda {
+                grid-column: 1/4;
+            }
+
+            .container__pacientes {
+                grid-column: 1/4;
+            }
+
+            .container__observacoes {
+                margin-left: 1rem;
+                grid-column: 1/4;
+
+                .observacoesParagrafo {
+                    font-size: $tamanho-principal + 0.5;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .container__menu {
+            display: grid;
+            grid-area: 1/1/2/2;
+            width: 250px;
+            text-align: center;
+            height: 50vh;
+            position: relative;
+            font-size: $tamanho-principal + 0.1;
+
+            .menu__item {
+                &:hover {
+                    color: $cor-botao-azul;
+                }
+            }
+
+            .container__btn--flutuante {
+                display: none;
+            }
+        }
+
+        .container__formulario {
+            display: block;
+            position: initial;
+
+            .titulo__formulario {
+                font-size: $tamanho-principal + 1;
+            }
+
+            .form__itens {
+                width: 510px;
+
+                .fechar {
+                    display: none;
+                }
+
+                .nome__form {
+                    width: 90%;
+                    margin-top: 2rem;
+                }
+
+                .opcoes__form {
+                    display: block;
+                }
+
+                .observacao__form {
+                    width: 90%;
+                }
+            }
+        }
+
+        .container__footer {
+            display: block;
+            width: 100%;
+            background: $cinza-700;
+            padding: 50px 0;
+            text-align: center;
+            grid-column: 1/3;
+
+            .footer__paragrafo {
+                font-size: $tamanho-principal + 0.4;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+    }
+
+}

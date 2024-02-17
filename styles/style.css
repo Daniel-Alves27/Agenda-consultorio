@@ -1,0 +1,424 @@
+.container__consultas {
+  padding: 30px 16px 95px 16px;
+  background: #F8F4FF;
+  font-family: "Montserrat", sans-serif;
+}
+.container__consultas .container__perfil {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: center;
+}
+.container__consultas .container__perfil .perfil__img {
+  max-width: 57px;
+  border-radius: 50%;
+  grid-row: 1/3;
+}
+.container__consultas .container__perfil .perfil__nome {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #464646;
+}
+.container__consultas .container__perfil .perfil__info {
+  color: #A3A3A3;
+}
+.container__consultas .titulo__agenda {
+  font-weight: 700;
+  color: #464646;
+  margin: 30px 0 8px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens {
+  margin-bottom: 16px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(3, auto);
+  background: #fff;
+  border-radius: 8px;
+  gap: 0.3rem 1rem;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .paciente__img {
+  max-width: 32px;
+  border-radius: 50%;
+  grid-area: 1/1/3/2;
+  align-self: center;
+  margin-left: 16px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .paciente__nome {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #464646;
+  align-self: self-end;
+  margin-top: 16px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .tipo__consulta {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #A3A3A3;
+  margin-bottom: 16px;
+  height: 20px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .tipo__consulta img {
+  padding-right: 10px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .icon__chat {
+  grid-area: 1/3/3/4;
+  align-self: center;
+  margin-right: 16px;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/4;
+  gap: 1rem;
+  padding: 9px 16px 16px 16px;
+  border-top: 1px solid rgba(70, 70, 70, 0.1764705882);
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato span {
+  font-size: 0.8rem;
+  color: #464646;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato .btn__chamada-video {
+  padding: 13px 16px;
+  background: #FFB050;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  grid-row: 2/3;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato .btn__chamada-video:hover {
+  color: #FFB050;
+  background: #fff;
+  border: 2px solid #FFB050;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato .btn__chamada-audio {
+  padding: 13px 16px;
+  border: 1px solid #ECECEC;
+  font-weight: 500;
+  border-radius: 8px;
+  grid-row: 2/3;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato .btn__chamada-audio:hover {
+  color: #fff;
+  background: rgb(74, 202, 74);
+  border: 1px solid rgb(74, 202, 74);
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato .btn__endereco {
+  padding: 13px 47px;
+  background: #4894FF;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #fff;
+  grid-column: 1/4;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__contato .btn__endereco:hover {
+  color: #4894FF;
+  background: #fff;
+  border: 2px solid #4894FF;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__observacoes {
+  margin-left: 1rem;
+  grid-column: 1/4;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__observacoes span {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.container__consultas .container__pacientes .container__pacientes--itens .paciente__itens .container__observacoes .observacoes__paragrafo {
+  font-weight: 500;
+  line-height: 24px;
+  padding: 1rem 0;
+  color: black;
+}
+
+.container__menu {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 90px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.container__menu .menu__item {
+  display: grid;
+  row-gap: 10px;
+  margin-bottom: 20px;
+  color: #A3A3A3;
+}
+.container__menu .menu__item img {
+  justify-self: center;
+  align-self: self-end;
+}
+.container__menu .container__btn--flutuante {
+  display: grid;
+  row-gap: 10px;
+  position: fixed;
+  right: 30px;
+  bottom: 130px;
+  cursor: pointer;
+}
+.container__menu .container__btn--flutuante .btn__menu {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 20px 20px 10px 20px;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.container__menu .container__btn--flutuante .btn__menu span {
+  align-self: center;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+.container__menu .container__btn--flutuante .btn__menu img {
+  max-width: 30px;
+  background: #4894FF;
+  border-radius: 50%;
+  padding: 15px;
+  grid-column: 2/3;
+  justify-self: right;
+}
+.container__menu .container__btn--flutuante .btn__menu:nth-child(1) {
+  display: none;
+}
+.container__menu .container__btn--flutuante .btn__menu:nth-child(2) {
+  display: none;
+}
+
+.container__formulario {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  grid-column: 1/3;
+  background: rgba(248, 244, 255, 0.8);
+  font-weight: 700;
+}
+.container__formulario .titulo__formulario {
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 3rem;
+}
+.container__formulario .form__itens {
+  display: flex;
+  flex-direction: column;
+  background: #A3A3A3;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 30px;
+  row-gap: 1rem;
+  padding-left: 2rem;
+}
+.container__formulario .form__itens .fechar {
+  text-align: right;
+  margin: 10px 10px 0 0;
+}
+.container__formulario .form__itens .fechar img {
+  max-width: 40px;
+}
+.container__formulario .form__itens .form__label {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.container__formulario .form__itens .nome__form {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+.container__formulario .form__itens .nome__form::-moz-placeholder {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.container__formulario .form__itens .nome__form::placeholder {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.container__formulario .form__itens .opcoes__form {
+  display: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+.container__formulario .form__itens .data__form {
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.container__formulario .form__itens .hora__form {
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.container__formulario .form__itens .observacao__form {
+  width: 90%;
+  height: 150px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  resize: none;
+  padding: 10px;
+}
+.container__formulario .form__itens .btn__agendar {
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #4894FF;
+  color: #fff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.container__formulario .form__itens .btn__agendar:hover {
+  background: #fff;
+  color: #4894FF;
+  border: 2px solid #4894FF;
+}
+
+@media screen and (min-width: 768px) {
+  .container__consultas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .container__consultas .container__perfil {
+    grid-column: 1/3;
+  }
+  .container__consultas .titulo__agenda {
+    grid-column: 1/3;
+  }
+  .container__consultas .container__pacientes {
+    display: grid;
+    grid-column: 1/3;
+    gap: 1rem;
+  }
+  .container__formulario .titulo__formulario {
+    font-size: 1.5rem;
+  }
+  .container__formulario .form__itens {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .body .background {
+    display: none;
+  }
+  .body .container__consultas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2/3;
+    row-gap: 1.2rem;
+  }
+  .body .container__consultas .container__perfil {
+    grid-column: 1/3;
+  }
+  .body .container__consultas .titulo__agenda {
+    grid-column: 1/4;
+  }
+  .body .container__consultas .container__pacientes {
+    grid-column: 1/4;
+  }
+  .body .container__consultas .container__observacoes {
+    margin-left: 1rem;
+    grid-column: 1/4;
+  }
+  .body .container__consultas .container__observacoes .observacoesParagrafo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .body .container__menu {
+    display: grid;
+    grid-area: 1/1/2/2;
+    width: 250px;
+    text-align: center;
+    height: 50vh;
+    position: relative;
+    font-size: 1.1rem;
+  }
+  .body .container__menu .menu__item:hover {
+    color: #4894FF;
+  }
+  .body .container__menu .container__btn--flutuante {
+    display: none;
+  }
+  .body .container__formulario {
+    display: block;
+    position: initial;
+  }
+  .body .container__formulario .titulo__formulario {
+    font-size: 2rem;
+  }
+  .body .container__formulario .form__itens {
+    width: 510px;
+  }
+  .body .container__formulario .form__itens .fechar {
+    display: none;
+  }
+  .body .container__formulario .form__itens .nome__form {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .body .container__formulario .form__itens .opcoes__form {
+    display: block;
+  }
+  .body .container__formulario .form__itens .observacao__form {
+    width: 90%;
+  }
+  .body .container__footer {
+    display: block;
+    width: 100%;
+    background: #464646;
+    padding: 50px 0;
+    text-align: center;
+    grid-column: 1/3;
+  }
+  .body .container__footer .footer__paragrafo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+.container__footer {
+  display: none;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: none;
+  top: 0;
+}/*# sourceMappingURL=style.css.map */
